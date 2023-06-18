@@ -161,10 +161,6 @@ footer p {
     align-items: center;
   }
 
-  .item {
-    flex: 0 0 calc(50% - 20px);
-  }
-
   .logo {
     margin-top: 14px;
     font-family: "Pangolin", cursive;
@@ -172,10 +168,14 @@ footer p {
     color: #fff;
   }
 
+  header {
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
 
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: space-between;
-}
+  header nav {
+    margin-top: 14px;
+    align-items: center;
+  }
 }
