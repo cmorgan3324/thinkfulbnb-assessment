@@ -60,17 +60,15 @@ header {
   background-color: #ff385c;
   padding: 20px;
   text-align: center;
+   display: flex;
+  flex-direction: row;
+  align-items: space-between;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
-}
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: space-between;
 }
 
 header nav {
