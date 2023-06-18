@@ -60,9 +60,6 @@ header {
   background-color: #ff385c;
   padding: 20px;
   text-align: center;
-   display: flex;
-  flex-direction: row;
-  align-items: space-between;
 }
 
 .logo {
@@ -179,6 +176,9 @@ footer p {
     flex-direction: row;
   }
 
-  header h1 {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
   }
 }
