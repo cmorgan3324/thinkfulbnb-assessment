@@ -62,12 +62,6 @@ header {
   text-align: center;
 }
 
-.logo {
-  font-family: "Pangolin", cursive;
-  font-size: 72px;
-  color: #fff;
-}
-
 header nav {
   display: flex;
   justify-content: center;
@@ -172,13 +166,16 @@ footer p {
   }
 
   .logo {
-    display: flex;
-    flex-direction: row;
+    margin-top: 14px;
+    font-family: "Pangolin", cursive;
+    font-size: 42px;
+    color: #fff;
   }
 
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-  }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
 }
