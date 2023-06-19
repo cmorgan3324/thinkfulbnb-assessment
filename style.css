@@ -155,9 +155,7 @@ footer p {
 
 @media all and (min-width: 480px) {
   form {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: row
   }
   form div {
     flex-direction: column;
