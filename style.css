@@ -43,7 +43,7 @@ form {
   border: 2px solid #ff385c;
   padding: 10px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 
