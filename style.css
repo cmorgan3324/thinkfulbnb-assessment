@@ -42,7 +42,7 @@ form {
   display: flex;
   border: 2px solid #ff385c;
   padding: 10px;
-  flex-direction: column;
+/*   flex-direction: column; */
   justify-content: space-between;
 }
 
