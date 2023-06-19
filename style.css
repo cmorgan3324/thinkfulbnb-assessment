@@ -91,10 +91,12 @@ header nav ul li a:hover {
 /* -------  Search Form ------- */
 
 form {
+  display: flex;
   border: 2px solid #ff385c;
   padding: 10px;
   max-width: 800px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .form-row {
@@ -143,18 +145,16 @@ footer p {
 @media all and (min-width: 480px) {
   form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
-
   form div {
-    display: flex;
     flex-direction: column;
   }
 
-  form button {
+  /* form button {
     width: 15%;
-  }
+  } */
 
   .group {
     flex-direction: row;
