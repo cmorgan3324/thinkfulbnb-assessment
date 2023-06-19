@@ -5,7 +5,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.logo {
+    margin-top: 14px;
+    font-family: "Pangolin", cursive;
+    font-size: 42px;
+    color: #fff;
+  }
 h2 {
   font-size: 26px;
   font-weight: 400;
@@ -152,20 +157,9 @@ footer p {
     flex-direction: column;
   }
 
-  /* form button {
-    width: 15%;
-  } */
-
   .group {
     flex-direction: row;
     align-items: center;
-  }
-
-  .logo {
-    margin-top: 14px;
-    font-family: "Pangolin", cursive;
-    font-size: 42px;
-    color: #fff;
   }
 
   header {
