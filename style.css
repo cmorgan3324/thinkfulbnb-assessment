@@ -157,9 +157,6 @@ footer p {
   form {
     flex-direction: row
   }
-  form div {
-    flex-direction: column;
-  }
 
   .group {
     flex-direction: row;
