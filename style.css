@@ -6,11 +6,11 @@ body {
   padding: 0;
 }
 .logo {
-    margin-top: 14px;
-    font-family: "Pangolin", cursive;
-    font-size: 42px;
-    color: #fff;
-  }
+  margin-top: 14px;
+  font-family: "Pangolin", cursive;
+  font-size: 42px;
+  color: #fff;
+}
 h2 {
   font-size: 26px;
   font-weight: 400;
@@ -45,7 +45,6 @@ form {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 
 main img {
   width: 100%;
@@ -106,16 +105,19 @@ header nav ul li a:hover {
 
 form {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
   border: 2px solid #ff385c;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 .form-row {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 form label {
@@ -157,7 +159,7 @@ footer p {
 
 @media all and (min-width: 480px) {
   form {
-    flex-direction: row
+    flex-direction: row;
   }
 
   .group {
