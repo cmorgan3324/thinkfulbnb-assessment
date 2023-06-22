@@ -106,7 +106,7 @@ header nav ul li a:hover {
 form {
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-evenly;
+  justify-content: space-around;
   border: 2px solid #ff385c;
   padding: 10px;
   flex-wrap: wrap;
@@ -114,10 +114,11 @@ form {
 
 .form-row {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 15px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  /* flex-wrap: wrap; */
 }
 
 form label {
@@ -160,6 +161,10 @@ footer p {
 @media all and (min-width: 480px) {
   form {
     flex-direction: row;
+  }
+
+  .form-row {
+    flex-wrap: wrap;
   }
 
   .group {
