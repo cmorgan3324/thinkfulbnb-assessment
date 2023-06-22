@@ -97,7 +97,7 @@ header nav ul li a:hover {
 
 form {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-around;
   border: 2px solid #ff385c;
   padding: 10px;
