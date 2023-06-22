@@ -98,10 +98,10 @@ header nav ul li a:hover {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 2px solid #ff385c;
   padding: 10px;
-  flex-wrap: wrap;
+/*   flex-wrap: wrap; */
 }
 
 .form-row {
