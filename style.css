@@ -164,7 +164,8 @@ footer p {
   }
 
   .form-row {
-    flex-wrap: wrap;
+/*     flex-wrap: wrap; */
+  flex-shrink: 1;
   }
 
   .group {
