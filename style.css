@@ -8,7 +8,7 @@ body {
 .logo {
   margin-top: 14px;
   font-family: "Pangolin", cursive;
-  font-size: 42px;
+  font-size: 70px;
   color: #fff;
 }
 h2 {
@@ -160,14 +160,11 @@ footer p {
 
 @media all and (min-width: 480px) {
   form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row; 
   }
 
   .form-row {
     flex-wrap: wrap;
- 
   }
 
   .group {
@@ -187,5 +184,5 @@ footer p {
   }
 
   .logo {
-    font-size: 70px;
+    font-size: 42px;
 }
