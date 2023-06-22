@@ -161,11 +161,12 @@ footer p {
 @media all and (min-width: 480px) {
   form {
     flex-direction: row;
+    flex-shrink: 1;
   }
 
   .form-row {
-/*     flex-wrap: wrap; */
-  flex-shrink: 1;
+    flex-wrap: wrap;
+ 
   }
 
   .group {
