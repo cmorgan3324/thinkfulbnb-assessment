@@ -161,7 +161,6 @@ footer p {
 @media all and (min-width: 480px) {
   form {
     flex-direction: row;
-    flex-shrink: 1;
   }
 
   .form-row {
