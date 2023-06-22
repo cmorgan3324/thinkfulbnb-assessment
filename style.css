@@ -160,7 +160,9 @@ footer p {
 
 @media all and (min-width: 480px) {
   form {
+    display: flex
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .form-row {
@@ -183,4 +185,7 @@ footer p {
     margin-top: 14px;
     align-items: center;
   }
+
+  .logo {
+    font-size: 
 }
