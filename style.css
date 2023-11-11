@@ -2,15 +2,9 @@
 
 body {
   font-family: "Lato", sans-serif;
-  margin: 0;
-  padding: 0;
+  display: grid;
 }
-.logo {
-  margin-top: 14px;
-  font-family: "Pangolin", cursive;
-  font-size: 70px;
-  color: #fff;
-}
+
 h2 {
   font-size: 26px;
   font-weight: 400;
@@ -21,12 +15,13 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
-  margin: 10px 0;
 }
 
 p {
   line-height: 1.5em;
   margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 section {
@@ -40,7 +35,16 @@ section.alternate-background {
 
 main img {
   width: 100%;
-  height: auto;
+}
+
+.about-img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.host-img {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* ---  Groups & Items --- */
@@ -57,40 +61,44 @@ main img {
 
 .item-double {
   flex: 2;
+  margin: 10px;
 }
 
 /* -------  Navigation ------- */
 
 header {
   background-color: #ff385c;
-  padding: 20px;
+  padding: 30px 30px 0 20px;
   text-align: center;
 }
 
-header nav {
+.logo {
   display: flex;
+  font-family: "Pangolin", cursive;
+  font-size: 64px;
+  color: #fff;
   justify-content: center;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  text-decoration: none;
 }
 
 header nav ul li {
-  margin: 0 10px;
+  list-style-type: none;
 }
 
 header nav ul li a {
   color: #fff;
+  padding: 0 20px 0 0;
   text-decoration: none;
 }
 
 header nav ul li a:hover {
-  color: #bdbdbd;
+  color: #8f8e8e;
+  text-decoration: underline;
 }
 
 /* -------  Search Form ------- */
@@ -101,29 +109,16 @@ form {
   justify-content: space-between;
   border: 2px solid #ff385c;
   padding: 10px;
-/*   flex-wrap: wrap; */
-}
-
-.form-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 15px;
-  /* justify-content: space-evenly; */
-  /* flex-wrap: wrap; */
 }
 
 form label {
   font-weight: bold;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
-form select,
-form input {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+form button:hover {
+    color: #8f8e8e;
+  text-decoration: none;
 }
 
 form button {
@@ -133,7 +128,11 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
-  cursor: pointer;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* -------  Footer ------- */
@@ -151,31 +150,78 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
-  form {
-    flex-direction: row; 
-  }
-
-  .form-row {
-    flex-wrap: wrap;
-  }
-
-  .group {
-    flex-direction: row;
-    align-items: center;
-  }
-
   header {
     display: flex;
-    padding: 0 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 15px;
   }
-
-  header nav {
-    margin-top: 14px;
-    align-items: center;
-  }
-
+  
   .logo {
-    font-size: 42px;
-}
+    font-size: 48px;
+    padding-left: 5px;
+  }
+
+  /* -------  Search Form ------- */
+
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+  }
+
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form label {
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .form-input {
+    padding-right: 15px;
+    justify-content: center;
+  }
+
+  button {
+    justify-content: center;
+  }
+
+  /* -------  Groups & Items------- */
+
+  .group {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .item button,
+  .item input,
+  .item label,
+  .item select {
+    display: flex;
+    width: 100%;
+  }
+
+  .item {
+    flex: 1;
+    margin: 15px;
+  }
+
+  .item-double {
+    flex: 2;
+    margin: 15px;
+  }
+
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
